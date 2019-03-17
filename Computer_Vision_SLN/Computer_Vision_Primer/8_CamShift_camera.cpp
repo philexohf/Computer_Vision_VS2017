@@ -78,12 +78,12 @@ int main(int argc, const char** argv)
 		cout << "不能初始化摄像头\n";
 	}
 
-	namedWindow("Histogram", 0);
-	namedWindow("CamShift Demo", 0);
-	setMouseCallback("CamShift Demo", onMouse, 0);
-	createTrackbar("Vmin", "CamShift Demo", &vmin, 256, 0);
-	createTrackbar("Vmax", "CamShift Demo", &vmax, 256, 0);
-	createTrackbar("Smin", "CamShift Demo", &smin, 256, 0);
+	namedWindow("Hist", 0);
+	namedWindow("CamShift", 1);
+	setMouseCallback("CamShift", onMouse, 0);
+	createTrackbar("Vmin", "CamShift", &vmin, 256, 0);
+	createTrackbar("Vmax", "CamShift", &vmax, 256, 0);
+	createTrackbar("Smin", "CamShift", &smin, 256, 0);
 
 	Mat frame, hsv, hue, mask, hist, histimg = Mat::zeros(200, 320, CV_8UC3), backproj;
 	bool paused = false;
@@ -170,8 +170,8 @@ int main(int argc, const char** argv)
 			bitwise_not(roi, roi);
 		}
 
-		imshow("CamShift Demo", image);
-		imshow("Histogram", histimg);
+		imshow("CamShift", image);
+		imshow("Hist", histimg);
 
 		char c = (char)waitKey(10);
 		if (c == 27)
@@ -188,9 +188,9 @@ int main(int argc, const char** argv)
 		case 'h':
 			showHist = !showHist;
 			if (!showHist)
-				destroyWindow("Histogram");
+				destroyWindow("Hist");
 			else
-				namedWindow("Histogram", 1);
+				namedWindow("Hist", 1);
 			break;
 		case 'p':
 			paused = !paused;
