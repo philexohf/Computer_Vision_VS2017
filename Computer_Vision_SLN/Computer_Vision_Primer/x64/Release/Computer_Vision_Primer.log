@@ -1,7 +1,11 @@
-﻿  8_CamShift_camera.cpp
+﻿  9_LogoMove_canny.cpp
+d:\github\computer_vision_vs2017\computer_vision_sln\computer_vision_primer\9_logomove_canny.cpp(23): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+d:\github\computer_vision_vs2017\computer_vision_sln\computer_vision_primer\9_logomove_canny.cpp(23): warning C4244: “初始化”: 从“double”转换到“const int”，可能丢失数据
+d:\github\computer_vision_vs2017\computer_vision_sln\computer_vision_primer\9_logomove_canny.cpp(24): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+d:\github\computer_vision_vs2017\computer_vision_sln\computer_vision_primer\9_logomove_canny.cpp(24): warning C4244: “初始化”: 从“double”转换到“const int”，可能丢失数据
   正在生成代码
-  1 of 136 functions ( 0.7%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
+  253 of 257 functions (98.4%) were compiled, the rest were copied from previous compilation.
+    21 functions were new in current compilation
     0 functions had inline decision re-evaluated but remain unchanged
   已完成代码的生成
   Computer_Vision_Primer.vcxproj -> D:\GitHub\Computer_Vision_VS2017\Computer_Vision_SLN\x64\Release\Computer_Vision_Primer.exe
